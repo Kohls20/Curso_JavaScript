@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 70vh;
+            background: black;
+        }
+        .conteiner{
+            background: linear-gradient(to right, rgb(5, 5, 133), rgb(80, 0, 126));;
+            box-shadow: 1px 1px 40px rgb(126, 65, 170);
+            border: solid 1px white;
+            margin: 50px;
+            border-radius: 40px;
+            height: 70vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #txtvel{
+            color:white;
+            margin: 10px;
+            width: 250px;
+            height: 35px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            padding-left: 30px;
+        }
+        #txtvel::placeholder{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 16px;
+            color: white;
+        }
+        .botao{
+            color: white;
+            padding: 6px 25px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Você é Brasileiro?</h1>
+        Você é de onde: <input type="text" placeholder="Digite aqui..." name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" class="botao" onclick="calcular()">
+
+        <div id="res">
+
+        </div>
+    </div>
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('div#res')
+
+            var vel = txtv.value
+
+            res.innerHTML = `<p>Você vive em: <strong>${vel}</strong>.</p>`
+
+
+            if (vel == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é Estranjeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
