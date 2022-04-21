@@ -6,5 +6,7 @@ oferecido pelo **Curso Em Video** e patrocinado pelo **GOOGLE**, com o professor
 - JavaScript
 - HTML
 - CSS
-- VSCode
-- Node JS
+- NodeJS
+
+## IDE utiluzada
+ - VSCode
