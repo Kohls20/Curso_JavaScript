@@ -8,5 +8,5 @@ oferecido pelo **Curso Em Video** e patrocinado pelo **GOOGLE**, com o professor
 - CSS
 - NodeJS
 
-## IDE utiluzada
+## IDE utilizada
  - VSCode
