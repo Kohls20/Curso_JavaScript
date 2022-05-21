@@ -14,4 +14,3 @@ amigo.engordar(5.1)
 
 console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)
 
-
